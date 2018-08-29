@@ -1,0 +1,30 @@
+#include<stdio.h>
+void print_triangle(int n)
+{
+int i,j;
+for( i=0;i<=n-1;i++)
+{
+for(j=0;j<=2*n+3;j++)
+{
+if(j==0||j==((*2*j+3)-1))
+printf(" ");
+else
+printf("*");
+}
+printf("\n");
+}
+for(i=0;i<=n-1;i++)
+{
+for(j=0;j<=2*n+1;j++)
+printf("*");
+printf("\n");
+}
+}
+int main()
+{
+int m;
+printf("ENTER THE NUMBER OF ROWS\n");
+scanf("%d",&m);
+print_triangle(m);
+return 0;
+}
